@@ -6,7 +6,7 @@ build:
 
 run:
 	@echo "running ${SERVICE}..."
-	./dist/${SERVICE}
+	@source internal/env/.env && ./dist/${SERVICE}
 
 clean:
 	@echo "cleaning dist/"
